@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Admin\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,10 +20,12 @@ use App\Http\Controllers\Controller;
 // });
 Route::get('/', [Controller::class, 'index']);
 Route::get('/cv', [Controller::class, 'cvPage']);
+
 Route::get('/projects', [Controller::class, 'projectsPage']);
 Route::get('/hireme', [Controller::class, 'hirePage']);
 Route::get('/contact', [Controller::class, 'contactPage']);
 Route::get('/myblog', [Controller::class, 'blogPage']);
 
 
+Route::get('/admin', [AdminController::class, 'index']);
 
