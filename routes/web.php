@@ -26,6 +26,6 @@ Route::get('/hireme', [Controller::class, 'hirePage']);
 Route::get('/contact', [Controller::class, 'contactPage']);
 Route::get('/myblog', [Controller::class, 'blogPage']);
 
-
+Voyager::routes();
 Route::get('/admin', [AdminController::class, 'index']);
 
